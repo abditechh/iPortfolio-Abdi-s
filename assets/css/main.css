@@ -1285,7 +1285,7 @@ section,
 
 }
 #myVideo {
-    width: 120%;
+    width: 150%;
     height: 100%;
     object-fit: cover; /* Ensures the video fills the container */
 }
