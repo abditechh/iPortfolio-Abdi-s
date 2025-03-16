@@ -1279,13 +1279,13 @@ section,
 #myVideo {
   
     position: relative;
-    width: 120vw; /* Full width of the viewport */
+    width: 100vw; /* Full width of the viewport */
     height: 100vh; /* Full height of the viewport */
     overflow: hidden;
 
 }
 #myVideo {
-    width: 150%;
+    width: 140%;
     height: 100%;
     object-fit: cover; /* Ensures the video fills the container */
 }
