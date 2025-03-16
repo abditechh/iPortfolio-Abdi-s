@@ -28,6 +28,16 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    .portfolio-info  {
+     padding-left: 20px;
+    }
+    .portfolio-description {
+      padding-left: 20px;
+    }
+
+  </style>
+
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -89,6 +99,60 @@
         </nav>
       </div>
     </div><!-- End Page Title -->
+<section>
+  
+    <div class="swiper-wrapper align-items-center">
+                <div class="video-container">
+                  <video id="myVideo" autoplay l loop playsinline webkit-playsinline preload="auto" ontimeupdate="updateTime()">
+                    <source src="video (1).mp4" type="video/mp4">
+                    <source src="video (1).webm" type="video/webm">
+                    Your browser does not support the video tag.
+                  </video>
+                  <button id="playPauseBtn" class="play-pause-btn" onclick="toggleVideo()">Play</button>
+                  <button id="muteBtn" class="mute-btn" onclick="toggleMute()">Mute</button>
+                  <input type="range" id="volumeControl" class="volume-control" min="0" max="1" step="0.01" value="1" onchange="setVolume(this.value)" />
+                  <div id="timeDisplay" class="time-display">0:00 / 0:00</div>
+                </div>
+                <div class="controls">
+                  <button id="playPauseBtn" class="play-pause-btn" onclick="toggleVideo()">Play</button>
+                  <button id="muteBtn" class="mute-btn" onclick="toggleMute()">Mute</button>
+                  <input type="range" id="volumeControl" min="0" max="1" step="0.1" onchange="setVolume(this.value)">
+                  <div id="progressContainer" class="progress-container">
+                      <input type="range" id="progressBar" value="0" min="0" max="100" step="0.1">
+                  </div>
+                  <div id="timeDisplay" class="time-display">0:00 / 0:00</div>
+              </div>
+              </div>
+              
+              <div class="swiper-pagination"></div>
+              
+              <div class="col-lg-8">
+                <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                  <h3>Project information</h3>
+                  <ul>
+                    <li><strong>Category</strong>: Drone Footage</li>
+                    <li><strong>Project date</strong>: 01 March, 2025</li>
+                    <li><strong>Project URL</strong>: <a href="https://abditechh.github.io/My-Resume/hobbies.html" target="_blank">Hobbies</a></li>
+                  </ul>
+                </div>
+              
+                <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+                  <h2>Capturing the World from Above</h2>
+                  <p>
+                    Flying drones is more than just a hobby—it's my passion. I specialize in capturing stunning aerial footage, bringing unique perspectives to landscapes, events, and projects. Whether it's for real estate, travel, or cinematic shots, I strive to deliver breathtaking visuals.
+
+                    I would love to create stunning drone footage for you too! Let’s make your vision take flight. 🚀
+                    
+                    </p>
+                </div>
+              </div>
+              
+          
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
 
     <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
@@ -276,58 +340,7 @@
                 }
               </script>
 
-              <div class="swiper-wrapper align-items-center">
-                <div class="video-container">
-                  <video id="myVideo" autoplay l loop playsinline webkit-playsinline preload="auto" ontimeupdate="updateTime()">
-                    <source src="video (1).mp4" type="video/mp4">
-                    <source src="video (1).webm" type="video/webm">
-                    Your browser does not support the video tag.
-                  </video>
-                  <button id="playPauseBtn" class="play-pause-btn" onclick="toggleVideo()">Play</button>
-                  <button id="muteBtn" class="mute-btn" onclick="toggleMute()">Mute</button>
-                  <input type="range" id="volumeControl" class="volume-control" min="0" max="1" step="0.01" value="1" onchange="setVolume(this.value)" />
-                  <div id="timeDisplay" class="time-display">0:00 / 0:00</div>
-                </div>
-                <div class="controls">
-                  <button id="playPauseBtn" class="play-pause-btn" onclick="toggleVideo()">Play</button>
-                  <button id="muteBtn" class="mute-btn" onclick="toggleMute()">Mute</button>
-                  <input type="range" id="volumeControl" min="0" max="1" step="0.1" onchange="setVolume(this.value)">
-                  <div id="progressContainer" class="progress-container">
-                      <input type="range" id="progressBar" value="0" min="0" max="100" step="0.1">
-                  </div>
-                  <div id="timeDisplay" class="time-display">0:00 / 0:00</div>
-              </div>
-              </div>
               
-              <div class="swiper-pagination"></div>
-              
-              <div class="col-lg-8">
-                <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-                  <h3>Project information</h3>
-                  <ul>
-                    <li><strong>Category</strong>: Drone Footage</li>
-                    <li><strong>Project date</strong>: 01 March, 2025</li>
-                    <li><strong>Project URL</strong>: <a href="https://abditechh.github.io/My-Resume/hobbies.html" target="_blank">Hobbies</a></li>
-                  </ul>
-                </div>
-              
-                <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-                  <h2>Capturing the World from Above</h2>
-                  <p>
-                    Flying drones is more than just a hobby—it's my passion. I specialize in capturing stunning aerial footage, bringing unique perspectives to landscapes, events, and projects. Whether it's for real estate, travel, or cinematic shots, I strive to deliver breathtaking visuals.
-
-                    I would love to create stunning drone footage for you too! Let’s make your vision take flight. 🚀
-                    
-                    </p>
-                </div>
-              </div>
-              
-          
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Details Section -->
 
 
 
